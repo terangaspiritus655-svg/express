@@ -1,6 +1,0 @@
-{
-  "name": "ExpressH24",
-  "description": "Livraison Express 24H/24 • 7J/7 à Dakar - Vos essentiels livrés en 15 à 20 minutes",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
