@@ -1,0 +1,1286 @@
+import { Product } from '../types';
+
+export const OFFICIAL_PRODUCTS: Product[] = [
+  // -------------------------------------------------------------
+  // 1. NETTOYAGE MAISON (17 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p101',
+    name: 'Eau de Javel',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1585830812416-a6c86bb14576?auto=format&fit=crop&q=80&w=600',
+    description: 'Bouteille d\'eau de Javel désinfectante multi-usages pour désinfecter et blanchir les surfaces.',
+    stock: 45,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Bouteille 1L',
+    badge: 'Incontournable',
+    tags: ['désinfectant', 'javel', 'ménage']
+  },
+  {
+    id: 'p102',
+    name: 'Détergent liquide',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=600',
+    description: 'Détergent liquide concentré multi-surfaces pour sol, carreaux et sanitaires.',
+    stock: 30,
+    isAvailable: true,
+    unit: 'Flacon 1L'
+  },
+  {
+    id: 'p103',
+    name: 'Lessive en poudre',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Poudre de lavage ultra-active pour éliminer les taches tenaces et parfumer le linge.',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Paquet 1kg'
+  },
+  {
+    id: 'p104',
+    name: 'Lessive liquide',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=600',
+    description: 'Lessive liquide pour lavage en machine ou à la main, formule soin du textile.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Bidon 1.5L'
+  },
+  {
+    id: 'p105',
+    name: 'Adoucissant',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=600',
+    description: 'Adoucissant assouplissant pour linge frais, doux et agréablement parfumé.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Flacon 1L'
+  },
+  {
+    id: 'p106',
+    name: 'Liquide vaisselle',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1585830812416-a6c86bb14576?auto=format&fit=crop&q=80&w=600',
+    description: 'Liquide vaisselle super dégraissant senteur citron fraîcheur longue durée.',
+    stock: 60,
+    isAvailable: true,
+    unit: 'Flacon 750ml'
+  },
+  {
+    id: 'p107',
+    name: 'Nettoyant vitres',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=80&w=600',
+    description: 'Spray nettoyant vitres anti-traces pour miroirs et fenêtres étincelantes.',
+    stock: 20,
+    isAvailable: true,
+    unit: 'Spray 500ml'
+  },
+  {
+    id: 'p108',
+    name: 'Nettoyant sols',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=600',
+    description: 'Nettoyant sol parfum floral / lavande pour carrelage et marbre.',
+    stock: 35,
+    isAvailable: true,
+    unit: 'Flacon 1L'
+  },
+  {
+    id: 'p109',
+    name: 'Désinfectant',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Désinfectant ménager éliminant 99.9% des germes et bactéries.',
+    stock: 30,
+    isAvailable: true,
+    unit: 'Flacon 750ml'
+  },
+  {
+    id: 'p110',
+    name: 'Dégraissant cuisine',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1585830812416-a6c86bb14576?auto=format&fit=crop&q=80&w=600',
+    description: 'Spray dégraissant puissant pour cuisinières, hottes et plans de travail.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Spray 500ml'
+  },
+  {
+    id: 'p111',
+    name: 'Nettoyant toilettes',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=600',
+    description: 'Gel désinfectant anticalcaire pour cuvette WC.',
+    stock: 28,
+    isAvailable: true,
+    unit: 'Flacon 750ml'
+  },
+  {
+    id: 'p112',
+    name: 'Éponge',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=600',
+    description: 'Lot d\'éponges grattantes double face pour vaisselle et cuisine.',
+    stock: 100,
+    isAvailable: true,
+    unit: 'Lot de 2'
+  },
+  {
+    id: 'p113',
+    name: 'Tampon à récurer',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=600',
+    description: 'Spirale inox / tampon métallique anti-graisse brûlée.',
+    stock: 80,
+    isAvailable: true,
+    unit: 'Pièce'
+  },
+  {
+    id: 'p114',
+    name: 'Serpillière',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=80&w=600',
+    description: 'Serpillière microfibre haute absorption pour lavage des sols.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Pièce'
+  },
+  {
+    id: 'p115',
+    name: 'Balai',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=80&w=600',
+    description: 'Balai de ménage d\'intérieur avec manche résistant.',
+    stock: 20,
+    isAvailable: true,
+    unit: 'Pièce avec manche'
+  },
+  {
+    id: 'p116',
+    name: 'Pelle à poussière',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=80&w=600',
+    description: 'Ensemble pelle et balayette en plastique résistant.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Kit pelle'
+  },
+  {
+    id: 'p117',
+    name: 'Seau',
+    categoryId: 1,
+    categoryName: 'Nettoyage Maison',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=80&w=600',
+    description: 'Seau de ménage gradué avec anse solide.',
+    stock: 30,
+    isAvailable: true,
+    unit: 'Seau 10L'
+  },
+
+  // -------------------------------------------------------------
+  // 2. PAPIER & JETABLES (11 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p201',
+    name: 'Papier toilette',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Rouleaux de papier toilette hygiénique douillet double épaisseur.',
+    stock: 60,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Paquet de 4 rouleaux'
+  },
+  {
+    id: 'p202',
+    name: 'Essuie-tout',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Sopalin / essuie-tout ultra absorbant pour la cuisine.',
+    stock: 45,
+    isAvailable: true,
+    unit: 'Lot de 2 rouleaux'
+  },
+  {
+    id: 'p203',
+    name: 'Mouchoirs',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Étui de mouchoirs en papier doux 3 plis.',
+    stock: 100,
+    isAvailable: true,
+    unit: 'Paquet de poche'
+  },
+  {
+    id: 'p204',
+    name: 'Sacs-poubelle (petits, moyens, grands)',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=600',
+    description: 'Rouleau de sacs poubelle résistants avec liens de fermeture.',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Rouleau de 10 à 20 sacs'
+  },
+  {
+    id: 'p205',
+    name: 'Gants de ménage',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Gants de ménage réutilisables en latex pour protéger les mains.',
+    stock: 35,
+    isAvailable: true,
+    unit: 'Paire'
+  },
+  {
+    id: 'p206',
+    name: 'Film alimentaire',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=600',
+    description: 'Rouleau de film plastique étirable transparent pour conservation.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Rouleau 30m'
+  },
+  {
+    id: 'p207',
+    name: 'Papier aluminium',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&q=80&w=600',
+    description: 'Papier aluminium épais pour cuisson et conservation des repas.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Rouleau 20m'
+  },
+  {
+    id: 'p208',
+    name: 'Gobelets jetables',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Gobelets jetables en plastique / carton pour boissons chaudes ou froides.',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Rame de 50 gobelets'
+  },
+  {
+    id: 'p209',
+    name: 'Assiettes jetables',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Assiettes jetables rigides pour réceptions et pique-niques.',
+    stock: 45,
+    isAvailable: true,
+    unit: 'Paquet de 25 assiettes'
+  },
+  {
+    id: 'p210',
+    name: 'Couverts jetables',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Set de cuillères, fourchettes et couteaux jetables.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Lot de 30 pièces'
+  },
+  {
+    id: 'p211',
+    name: 'Pailles',
+    categoryId: 2,
+    categoryName: 'Papier & Jetables',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Pailles biodégradables ou plastique flexibles.',
+    stock: 60,
+    isAvailable: true,
+    unit: 'Paquet de 100 pailles'
+  },
+
+  // -------------------------------------------------------------
+  // 3. ENTRETIEN DU LINGE (5 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p301',
+    name: 'Lessive express',
+    categoryId: 3,
+    categoryName: 'Entretien du Linge',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=600',
+    description: 'Formule lessive express action rapide pour détacher en 15 minutes.',
+    stock: 30,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Bidon 2L'
+  },
+  {
+    id: 'p302',
+    name: 'Détachant',
+    categoryId: 3,
+    categoryName: 'Entretien du Linge',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=600',
+    description: 'Spray / poudre détachant avant-lavage pour cols et taches d\'huile.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Flacon 500ml'
+  },
+  {
+    id: 'p303',
+    name: 'Eau de repassage',
+    categoryId: 3,
+    categoryName: 'Entretien du Linge',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=600',
+    description: 'Eau déminéralisée parfumée pour fer à repasser, facilite le défroissage.',
+    stock: 20,
+    isAvailable: true,
+    unit: 'Bouteille 1L'
+  },
+  {
+    id: 'p304',
+    name: 'Pinces à linge',
+    categoryId: 3,
+    categoryName: 'Entretien du Linge',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=600',
+    description: 'Lot de pinces à linge robustes incassables.',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Paquet de 24'
+  },
+  {
+    id: 'p305',
+    name: 'Corde à linge',
+    categoryId: 3,
+    categoryName: 'Entretien du Linge',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=600',
+    description: 'Corde à linge renforcée résistance extérieure.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Rouleau 20 mètres'
+  },
+
+  // -------------------------------------------------------------
+  // 4. HYGIÈNE & SOINS (10 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p401',
+    name: 'Savon',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 700,
+    image: 'https://images.unsplash.com/photo-1607006344380-b6775a0824a7?auto=format&fit=crop&q=80&w=600',
+    description: 'Pain de savon hydratant pour le corps et la toilette quotidienne (Dove / Duru).',
+    stock: 90,
+    isAvailable: true,
+    unit: 'Pain de 100g'
+  },
+  {
+    id: 'p402',
+    name: 'Gel douche',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=600',
+    description: 'Gel douche onctueux nourrissant et rafraîchissant.',
+    stock: 35,
+    isAvailable: true,
+    unit: 'Flacon 400ml'
+  },
+  {
+    id: 'p403',
+    name: 'Shampoing',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&q=80&w=600',
+    description: 'Shampoing revitalisant pour cheveux doux et éclatants (Elseve / Pantene).',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Flacon 400ml'
+  },
+  {
+    id: 'p404',
+    name: 'Dentifrice',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600',
+    description: 'Dentifrice protection complète blancheur et haleine fraîche (Colgate / Signal).',
+    stock: 60,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Tube 100ml'
+  },
+  {
+    id: 'p405',
+    name: 'Brosse à dents',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=600',
+    description: 'Brosse à dents poils souples / moyens pour nettoyage efficace des gencives.',
+    stock: 75,
+    isAvailable: true,
+    unit: 'Unité'
+  },
+  {
+    id: 'p406',
+    name: 'Déodorant',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&q=80&w=600',
+    description: 'Déodorant spray ou bille anti-transpirant 48H (Nivea / Rexona).',
+    stock: 45,
+    isAvailable: true,
+    unit: 'Spray 150ml'
+  },
+  {
+    id: 'p407',
+    name: 'Papier hygiénique',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&q=80&w=600',
+    description: 'Rouleaux papier toilette doux extra confort.',
+    stock: 60,
+    isAvailable: true,
+    unit: 'Paquet 4 rouleaux'
+  },
+  {
+    id: 'p408',
+    name: 'Serviettes hygiéniques',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Serviettes hygiéniques ultra absorbantes avec ailettes (Always).',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Paquet de 10'
+  },
+  {
+    id: 'p409',
+    name: 'Couches bébé',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 8000,
+    image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&q=80&w=600',
+    description: 'Couches bébé fuites 0% absorption max (Pampers / Huggies).',
+    stock: 30,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Jumbo Pack'
+  },
+  {
+    id: 'p410',
+    name: 'Lingettes',
+    categoryId: 4,
+    categoryName: 'Hygiène & Soins',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Lingettes nettoyantes hydratantes pour bébé et corps.',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Paquet de 72'
+  },
+
+  // -------------------------------------------------------------
+  // 5. ANTI-INSECTES (4 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p501',
+    name: 'Spray anti-moustiques',
+    categoryId: 5,
+    categoryName: 'Anti-Insectes',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=600',
+    description: 'Aérosol répulsif moustiques et insectes volants action foudroyante (Raid / Catch).',
+    stock: 40,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Spray 400ml',
+    badge: 'Essentiel Dakar'
+  },
+  {
+    id: 'p502',
+    name: 'Spirales anti-moustiques',
+    categoryId: 5,
+    categoryName: 'Anti-Insectes',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=600',
+    description: 'Spirales serpentins à brûler pour éloigner les moustiques la nuit.',
+    stock: 70,
+    isAvailable: true,
+    unit: 'Boîte de 10 spirales'
+  },
+  {
+    id: 'p503',
+    name: 'Insecticide',
+    categoryId: 5,
+    categoryName: 'Anti-Insectes',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=600',
+    description: 'Insecticide polyvalent moustiques, mouches, cafards et puces.',
+    stock: 35,
+    isAvailable: true,
+    unit: 'Bombe 400ml'
+  },
+  {
+    id: 'p504',
+    name: 'Raticide',
+    categoryId: 5,
+    categoryName: 'Anti-Insectes',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=600',
+    description: 'Appât anti-rongeurs prêt à l\'emploi pour éliminer rats et souris.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Boîte appâts'
+  },
+
+  // -------------------------------------------------------------
+  // 6. CUISINE & DÉPANNAGE (9 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p601',
+    name: 'Huile 1 L',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&q=80&w=600',
+    description: 'Huile végétale raffinée pour cuisson et friture (Dinor / Lesieur).',
+    stock: 50,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Bouteille 1 Litre'
+  },
+  {
+    id: 'p602',
+    name: 'Sel',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1518110168401-f284357fb0f9?auto=format&fit=crop&q=80&w=600',
+    description: 'Sel de table iodé fin pour assaisonner tous vos repas.',
+    stock: 100,
+    isAvailable: true,
+    unit: 'Sachet 1kg'
+  },
+  {
+    id: 'p603',
+    name: 'Sucre 1 kg',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 1200,
+    image: 'https://images.unsplash.com/photo-1581441363689-1f3c3c414635?auto=format&fit=crop&q=80&w=600',
+    description: 'Sucre blanc granulé cristallisé pure canne (CSS).',
+    stock: 80,
+    isAvailable: true,
+    unit: 'Sachet 1kg'
+  },
+  {
+    id: 'p604',
+    name: 'Bouillons',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&q=80&w=600',
+    description: 'Tablettes de bouillon de cuisine (Maggi / Jumbo) pour relever les sauces.',
+    stock: 120,
+    isAvailable: true,
+    unit: 'Boîte de tablettes'
+  },
+  {
+    id: 'p605',
+    name: 'Allumettes',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 200,
+    image: 'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=600',
+    description: 'Boîte d\'allumettes de sûreté.',
+    stock: 150,
+    isAvailable: true,
+    unit: 'Paquet'
+  },
+  {
+    id: 'p606',
+    name: 'Briquet',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&q=80&w=600',
+    description: 'Briquet à gaz classique (BIC).',
+    stock: 100,
+    isAvailable: true,
+    unit: 'Unité'
+  },
+  {
+    id: 'p607',
+    name: 'Charbon',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 3000,
+    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=600',
+    description: 'Sac de charbon de bois de qualité pour barbecue et encens / attaya.',
+    stock: 30,
+    isAvailable: true,
+    unit: 'Sac'
+  },
+  {
+    id: 'p608',
+    name: 'Gaz butane (selon disponibilité)',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 6000,
+    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=600',
+    description: 'Recharge de bouteille de gaz butane (B6 / B12).',
+    stock: 15,
+    isAvailable: true,
+    unit: 'Bouteille échange',
+    badge: 'Dépannage Urgent'
+  },
+  {
+    id: 'p609',
+    name: 'Eau minérale',
+    categoryId: 6,
+    categoryName: 'Cuisine & Dépannage',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&q=80&w=600',
+    description: 'Bouteille d\'eau pure fraîche (Kirène / Casamançaise).',
+    stock: 150,
+    isAvailable: true,
+    unit: 'Bouteille 1.5L'
+  },
+
+  // -------------------------------------------------------------
+  // 7. BOISSONS (6 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p701',
+    name: 'Eau',
+    categoryId: 7,
+    categoryName: 'Boissons',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&q=80&w=600',
+    description: 'Eau minérale naturelle glacée Kirène 1.5L.',
+    stock: 200,
+    isAvailable: true,
+    unit: '1.5 Litres'
+  },
+  {
+    id: 'p702',
+    name: 'Jus de fruits',
+    categoryId: 7,
+    categoryName: 'Boissons',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&q=80&w=600',
+    description: 'Jus de fruits pur jus (Orange, Ananas, Mangue, Bissap, Bouye) 1L.',
+    stock: 60,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Brique / Bouteille 1L'
+  },
+  {
+    id: 'p703',
+    name: 'Boissons gazeuses',
+    categoryId: 7,
+    categoryName: 'Boissons',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=600',
+    description: 'Soda rafraîchissant (Coca-Cola, Fanta, Sprite, Gazelle) bouteille ou canette.',
+    stock: 90,
+    isAvailable: true,
+    unit: 'Bouteille 1L / Canette'
+  },
+  {
+    id: 'p704',
+    name: 'Boissons énergétiques',
+    categoryId: 7,
+    categoryName: 'Boissons',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&q=80&w=600',
+    description: 'Boisson énergisante glacée (Red Bull, XL, Monster) pour boost instantané.',
+    stock: 50,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Canette 250ml / 500ml'
+  },
+  {
+    id: 'p705',
+    name: 'Thé glacé',
+    categoryId: 7,
+    categoryName: 'Boissons',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=600',
+    description: 'Ice Tea Pêche ou Citron désaltérant frais.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Canette / Bouteille 50cl'
+  },
+  {
+    id: 'p706',
+    name: 'Lait',
+    categoryId: 7,
+    categoryName: 'Boissons',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=600',
+    description: 'Lait UHT demi-écrémé ou entier (Candia / Vitalait).',
+    stock: 55,
+    isAvailable: true,
+    unit: 'Brique 1 Litre'
+  },
+
+  // -------------------------------------------------------------
+  // 8. SNACKS (6 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p801',
+    name: 'Biscuits',
+    categoryId: 8,
+    categoryName: 'Snacks',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=80&w=600',
+    description: 'Biscuits croustillants au chocolat ou vanille (Oreo / Prince / Wafer).',
+    stock: 80,
+    isAvailable: true,
+    unit: 'Paquet'
+  },
+  {
+    id: 'p802',
+    name: 'Chips',
+    categoryId: 8,
+    categoryName: 'Snacks',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&q=80&w=600',
+    description: 'Chips de pommes de terre croustillantes salées ou paprika (Lay\'s / Pringles).',
+    stock: 70,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Grand sachet'
+  },
+  {
+    id: 'p803',
+    name: 'Chocolats',
+    categoryId: 8,
+    categoryName: 'Snacks',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1582176647440-3b13756e4d3b?auto=format&fit=crop&q=80&w=600',
+    description: 'Barre de chocolat ou tablette (Snickers, Mars, M&M\'s, Milka).',
+    stock: 65,
+    isAvailable: true,
+    unit: 'Barre / Tablettes'
+  },
+  {
+    id: 'p804',
+    name: 'Bonbons',
+    categoryId: 8,
+    categoryName: 'Snacks',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&q=80&w=600',
+    description: 'Sachet de bonbons acidulés ou gélifiés (Haribo / Mentos).',
+    stock: 100,
+    isAvailable: true,
+    unit: 'Sachet'
+  },
+  {
+    id: 'p805',
+    name: 'Arachides',
+    categoryId: 8,
+    categoryName: 'Snacks',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&q=80&w=600',
+    description: 'Arachides grillées salées du Sénégal.',
+    stock: 90,
+    isAvailable: true,
+    unit: 'Sachet 250g'
+  },
+  {
+    id: 'p806',
+    name: 'Céréales',
+    categoryId: 8,
+    categoryName: 'Snacks',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1521483451569-e33803c0330c?auto=format&fit=crop&q=80&w=600',
+    description: 'Céréales gourmandes petit-déjeuner (Corn Flakes / Chocapic).',
+    stock: 35,
+    isAvailable: true,
+    unit: 'Boîte 375g'
+  },
+
+  // -------------------------------------------------------------
+  // 9. BÉBÉ (6 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p901',
+    name: 'Lait infantile',
+    categoryId: 9,
+    categoryName: 'Bébé',
+    price: 8500,
+    image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&q=80&w=600',
+    description: 'Boîte de lait en poudre pour nourrissons (NAN 1, 2, 3 / Guigoz / Aptamil).',
+    stock: 25,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Boîte 800g',
+    badge: 'Essentiel Bébé'
+  },
+  {
+    id: 'p902',
+    name: 'Couches',
+    categoryId: 9,
+    categoryName: 'Bébé',
+    price: 8000,
+    image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&q=80&w=600',
+    description: 'Couches bébé confort nuit & jour (Taille 1 à 5 Pampers).',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Paquet XXL'
+  },
+  {
+    id: 'p903',
+    name: 'Lingettes',
+    categoryId: 9,
+    categoryName: 'Bébé',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Lingettes nettoyantes extra douces sans alcool.',
+    stock: 60,
+    isAvailable: true,
+    unit: 'Paquet 72 lingettes'
+  },
+  {
+    id: 'p904',
+    name: 'Crème pour bébé',
+    categoryId: 9,
+    categoryName: 'Bébé',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=600',
+    description: 'Crème hydratante et anti-rougeurs pour le siège de bébé (Mytosil / Mustela).',
+    stock: 30,
+    isAvailable: true,
+    unit: 'Tube 100g'
+  },
+  {
+    id: 'p905',
+    name: 'Biberons',
+    categoryId: 9,
+    categoryName: 'Bébé',
+    price: 3000,
+    image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&q=80&w=600',
+    description: 'Biberon anti-colique tétine silicone 240ml.',
+    stock: 20,
+    isAvailable: true,
+    unit: 'Unité'
+  },
+  {
+    id: 'p906',
+    name: 'Petits pots',
+    categoryId: 9,
+    categoryName: 'Bébé',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&q=80&w=600',
+    description: 'Purée de légumes ou compote de fruits pour bébé (Nestlé / Blédina).',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Pot en verre'
+  },
+
+  // -------------------------------------------------------------
+  // 10. PREMIÈRE NÉCESSITÉ (7 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p1001',
+    name: 'Thermomètre',
+    categoryId: 10,
+    categoryName: 'Première Nécessité',
+    price: 5000,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Thermomètre médical numérique frontal ou axillaire précis.',
+    stock: 20,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Unité'
+  },
+  {
+    id: 'p1002',
+    name: 'Compresses',
+    categoryId: 10,
+    categoryName: 'Première Nécessité',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Compresses de gaze stériles pour soin des plaies.',
+    stock: 45,
+    isAvailable: true,
+    unit: 'Boîte de 10 sachet de 2'
+  },
+  {
+    id: 'p1003',
+    name: 'Pansements',
+    categoryId: 10,
+    categoryName: 'Première Nécessité',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Assortiment de pansements adhésifs stériles.',
+    stock: 60,
+    isAvailable: true,
+    unit: 'Boîte de 20'
+  },
+  {
+    id: 'p1004',
+    name: 'Alcool à 70%',
+    categoryId: 10,
+    categoryName: 'Première Nécessité',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Alcool éthylique modifié 70% antiseptique.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Flacon 250ml'
+  },
+  {
+    id: 'p1005',
+    name: 'Gel hydroalcoolique',
+    categoryId: 10,
+    categoryName: 'Première Nécessité',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Gel désinfectant mains sans rincage.',
+    stock: 70,
+    isAvailable: true,
+    unit: 'Flacon 500ml'
+  },
+  {
+    id: 'p1006',
+    name: 'Masques',
+    categoryId: 10,
+    categoryName: 'Première Nécessité',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Masques chirurgicaux 3 plis haute filtration.',
+    stock: 80,
+    isAvailable: true,
+    unit: 'Boîte de 50'
+  },
+  {
+    id: 'p1007',
+    name: 'Gants jetables',
+    categoryId: 10,
+    categoryName: 'Première Nécessité',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    description: 'Gants d\'examen en nitrile ou latex.',
+    stock: 40,
+    isAvailable: true,
+    unit: 'Boîte de 50 gants'
+  },
+
+  // -------------------------------------------------------------
+  // 11. DÉPANNAGE & ÉLECTRONIQUE (10 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p1101',
+    name: 'Piles (AA, AAA, 9V)',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 2000,
+    image: 'https://images.unsplash.com/photo-1619725002198-6a689b72f41d?auto=format&fit=crop&q=80&w=600',
+    description: 'Piles alcalines longue durée (Duracell / Energizer).',
+    stock: 100,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Pack de 4 piles'
+  },
+  {
+    id: 'p1102',
+    name: 'Ampoules LED',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&q=80&w=600',
+    description: 'Ampoule LED économique culot E27 lumière blanche.',
+    stock: 50,
+    isAvailable: true,
+    unit: '12W / 15W'
+  },
+  {
+    id: 'p1103',
+    name: 'Bougies',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=600',
+    description: 'Bougies d\'éclairage dépannage coupure de courant.',
+    stock: 120,
+    isAvailable: true,
+    unit: 'Paquet de 6'
+  },
+  {
+    id: 'p1104',
+    name: 'Allumettes',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 200,
+    image: 'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=600',
+    description: 'Allumettes classiques.',
+    stock: 150,
+    isAvailable: true,
+    unit: 'Paquet'
+  },
+  {
+    id: 'p1105',
+    name: 'Briquets',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&q=80&w=600',
+    description: 'Briquets de poche à pierre / électronique.',
+    stock: 100,
+    isAvailable: true,
+    unit: 'Unité'
+  },
+  {
+    id: 'p1106',
+    name: 'Chargeurs USB',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 5000,
+    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600',
+    description: 'Chargeur rapide mural USB-C & USB-A 20W/33W.',
+    stock: 30,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Bloc secteur fast charge'
+  },
+  {
+    id: 'p1107',
+    name: 'Câbles de téléphone',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 3000,
+    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=600',
+    description: 'Câble tressé ultra résistant USB-C / Lightning iPhone / Micro-USB.',
+    stock: 45,
+    isAvailable: true,
+    unit: 'Câble 1m'
+  },
+  {
+    id: 'p1108',
+    name: 'Adaptateurs',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 4000,
+    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=600',
+    description: 'Adaptateur universel prise électrique / multiprise.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Unité'
+  },
+  {
+    id: 'p1109',
+    name: 'Ruban adhésif',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600',
+    description: 'Ruban adhésif / scotch marron ou transparent ultra collant.',
+    stock: 50,
+    isAvailable: true,
+    unit: 'Rouleau'
+  },
+  {
+    id: 'p1110',
+    name: 'Colle instantanée',
+    categoryId: 11,
+    categoryName: 'Dépannage & Électronique',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600',
+    description: 'Tube de super glue forte fixation 3 secondes (Super Glue / Loctite).',
+    stock: 60,
+    isAvailable: true,
+    unit: 'Tube 3g'
+  },
+
+  // -------------------------------------------------------------
+  // 12. FUMEURS (4 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p1201',
+    name: 'Cigarettes (paquet)',
+    categoryId: 12,
+    categoryName: 'Fumeurs',
+    price: 1700,
+    image: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&q=80&w=600',
+    description: 'Paquets de cigarettes (Marlboro, Dunhill, Rothmans). Emballage neutre discret.',
+    stock: 100,
+    isAvailable: true,
+    unit: 'Paquet de 20',
+    badge: 'Discret 24/7',
+    requiresAgeVerification: true
+  },
+  {
+    id: 'p1202',
+    name: 'OCB & papier à rouler',
+    categoryId: 12,
+    categoryName: 'Fumeurs',
+    price: 800,
+    image: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&q=80&w=600',
+    description: 'Carnet de feuilles OCB Slim / classique avec cartons.',
+    stock: 120,
+    isAvailable: true,
+    unit: 'Carnet',
+    requiresAgeVerification: true
+  },
+  {
+    id: 'p1203',
+    name: 'Filtres',
+    categoryId: 12,
+    categoryName: 'Fumeurs',
+    price: 600,
+    image: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&q=80&w=600',
+    description: 'Sachet de filtres en mousse pour cigarettes.',
+    stock: 90,
+    isAvailable: true,
+    unit: 'Sachet de filtres',
+    requiresAgeVerification: true
+  },
+  {
+    id: 'p1204',
+    name: 'Briquets',
+    categoryId: 12,
+    categoryName: 'Fumeurs',
+    price: 500,
+    image: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&q=80&w=600',
+    description: 'Briquets jetables / rechargeables.',
+    stock: 150,
+    isAvailable: true,
+    unit: 'Unité'
+  },
+
+  // -------------------------------------------------------------
+  // 13. ALCOOL (18+) (5 produits)
+  // -------------------------------------------------------------
+  {
+    id: 'p1301',
+    name: 'Bière (33cl)',
+    categoryId: 13,
+    categoryName: 'Alcool',
+    price: 1000,
+    image: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&q=80&w=600',
+    description: 'Bière blonde fraîche 33cl (Gazelle, Flag, Heineken). Servie bien glacée.',
+    stock: 80,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Canette / Bouteille 33cl',
+    badge: 'Bien Glacée',
+    requiresAgeVerification: true
+  },
+  {
+    id: 'p1302',
+    name: 'Bière (50cl)',
+    categoryId: 13,
+    categoryName: 'Alcool',
+    price: 1500,
+    image: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&q=80&w=600',
+    description: 'Grande bière glacée 50cl.',
+    stock: 70,
+    isAvailable: true,
+    unit: 'Canette 50cl',
+    requiresAgeVerification: true
+  },
+  {
+    id: 'p1303',
+    name: 'Vin (75cl)',
+    categoryId: 13,
+    categoryName: 'Alcool',
+    price: 4000,
+    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=600',
+    description: 'Bouteille de vin rouge, rosé ou blanc sélection spéciale 75cl.',
+    stock: 35,
+    isAvailable: true,
+    unit: 'Bouteille 75cl',
+    requiresAgeVerification: true
+  },
+  {
+    id: 'p1304',
+    name: 'Whisky (petite bouteille)',
+    categoryId: 13,
+    categoryName: 'Alcool',
+    price: 5000,
+    image: 'https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&q=80&w=600',
+    description: 'Whisky écossais de qualité format individuel / poche (William Lawson, Red Label).',
+    stock: 30,
+    isAvailable: true,
+    isFeatured: true,
+    unit: 'Petite bouteille 20cl/35cl',
+    requiresAgeVerification: true
+  },
+  {
+    id: 'p1305',
+    name: 'Spiritueux',
+    categoryId: 13,
+    categoryName: 'Alcool',
+    price: 6000,
+    image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=600',
+    description: 'Vodka, Gin, Rhum ou Liqueur pour cocktails.',
+    stock: 25,
+    isAvailable: true,
+    unit: 'Bouteille',
+    requiresAgeVerification: true
+  }
+];
