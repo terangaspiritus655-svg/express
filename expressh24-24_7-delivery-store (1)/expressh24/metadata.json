@@ -1,0 +1,6 @@
+{
+  "name": "ExpressH24",
+  "description": "Livraison Express 24H/24 et 7J/7 au Sénégal - Vos essentiels livrés en 15 à 20 minutes",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
